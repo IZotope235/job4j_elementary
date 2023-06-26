@@ -1,6 +1,20 @@
 package ru.job4j.calculator;
 
+import static ru.job4j.math.MathFunction.*;
 public class Calculator {
+    public static double sumAndMultiply(double first, double second) {
+        return ru.job4j.math.MathFunction.sum(first, second)
+                + ru.job4j.math.MathFunction.multiply(first, second);
+    }
+
+    public static double subtractAndDivision(double first, double second) {
+        return subtracting(first, second) + division(first, second);
+    }
+
+    public static double allMathFunctionMethods(double first, double second) {
+        return sum(first, second) + subtracting(first, second)
+                + multiply(first, second) + division(first, second);
+    }
 
     public static void plus(int first, int second) {
         int result = first + second;
@@ -30,6 +44,9 @@ public class Calculator {
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
+        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
+        System.out.println("Результат расчета равен: " + subtractAndDivision(10, 20));
+        System.out.println("Результат расчета равен: " + allMathFunctionMethods(10, 20));
 
         int size = 10;
         size = 100;
