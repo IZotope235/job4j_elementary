@@ -15,6 +15,5 @@ public class Turn {
         for (int i : back(sourceArray)) {
             System.out.println(i);
         }
-
     }
 }

@@ -20,7 +20,6 @@ public class SwitchArray {
         int[] rsl = swapBorder(numbers);
         for (int j : rsl) {
             System.out.println(j);
-
         }
     }
 }
