@@ -34,4 +34,39 @@ class MaxTest {
         int expected = 30;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenMax10to30to40Then40() {
+        int result = Max.max(10, 30, 40);
+        int expected = 40;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax10to30to30Then30() {
+        int result = Max.max(10, 30, 30);
+        int expected = 30;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax10to10to10Then10() {
+        int result = Max.max(10, 10, 10);
+        int expected = 10;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax10to20to30to40Then40() {
+        int result = Max.max(10, 20, 30, 40);
+        int expected = 40;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax10to20to30to10Then30() {
+        int result = Max.max(10, 20, 30, 10);
+        int expected = 30;
+        assertThat(result).isEqualTo(expected);
+    }
 }

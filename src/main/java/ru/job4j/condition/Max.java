@@ -6,6 +6,14 @@ public class Max {
         return left > right ? left : right;
     }
 
+    public static int max(int left, int middle, int right) {
+        return middle > max(left, right) ? middle : max(left, right);
+    }
+
+    public static int max(int left, int middle, int right, int upper) {
+        return upper > max(left, middle, right) ? upper : max(left, middle, right);
+    }
+
     public static void main(String[] args) {
         int result = Max.max(20, 10);
         System.out.println(result);
